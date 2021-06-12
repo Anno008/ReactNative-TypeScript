@@ -1,5 +1,5 @@
 # React Native TypeScript
-Example project containing typescript, react testing library webdriver io ui tests with configured eslint and prettier
+Example project containing: TypeScript, react testing library, webdriver io for ui tests, absolute imports configured with eslint and prettier
 
 ## Setting up development environment
 * Install node
@@ -27,6 +27,7 @@ a. yarn
   * yarn lint:fix -> goes through the code and checks for linting issues and fixes them where possible.
   * yarn clean:android -> cleans the android project artifacts, requires gradlew sync afterwards.
   * yarn build:android -> builds the release apk.
+  * yarn build:e2e:android -> builds the release apk while setting TEST env variable to true to add testID and accessibilityLabel properties.
 
 # UI tests
 Improvement move locators somewhere else and use them as variables, less error prone and better than using plain strings
